@@ -35,7 +35,7 @@ cat <<- EOF_CAT >> ${ecosystem}-sdr-receiver/etc/init.d/rcS
 
 cat /opt/sdr_receiver.bit > /dev/xdevcfg
 
-/opt/bin/sdr-receiver &
+/opt/bin/sdr-receiver > /output.txt &
 
 EOF_CAT
 

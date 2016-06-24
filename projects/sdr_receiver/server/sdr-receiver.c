@@ -136,7 +136,7 @@ int main(int argc, char *argv[])
       {
         offset = limit > 0 ? 0 : 4096;
         limit = limit > 0 ? 0 : 512;
-        if(send(sockClient, ram + offset, 4096, MSG_NOSIGNAL) < 0) break;
+        if(write(1, ram + offset, 4096) < 0) break;
       }
       else
       {

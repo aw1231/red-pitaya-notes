@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-module axis_gpio_reader #
+module axis_gpio_trigger #
 (
   parameter integer GPIO_DATA_WIDTH = 16
 )
